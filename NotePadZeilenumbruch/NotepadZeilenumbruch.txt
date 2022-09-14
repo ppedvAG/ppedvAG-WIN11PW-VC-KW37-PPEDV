@@ -1,0 +1,3 @@
+HKEY_CURRENT_USER\ Software\ Microsoft\ Notepad
+
+"fWrap" -> 1=an; 0=aus

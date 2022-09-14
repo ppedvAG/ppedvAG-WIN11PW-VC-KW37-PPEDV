@@ -1,0 +1,18 @@
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+  <displayName>
+  </displayName>
+  <description>
+  </description>
+  <resources>
+    <stringTable>
+      <string id="CAT_NotePadZeilenumbruch">NotePadZeilenumbruch</string>
+      <string id="POL_NotePadZeilenumbruch">NotePadZeilenumbruch</string>
+      <string id="POL_NotePadZeilenumbruch_Help">Zeilenumbruch aktivieren/deaktivieren</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="POL_NotePadZeilenumbruch">
+        <checkBox refId="CHK_63C21DF7_5EDF_4AFE_AA79_85E25BDF1CDF">ZeilenUmbruch</checkBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

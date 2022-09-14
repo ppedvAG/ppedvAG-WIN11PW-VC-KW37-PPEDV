@@ -1,0 +1,41 @@
+<policyDefinitions revision="1.0" schemaVersion="1.0">
+  <policyNamespaces>
+    <target prefix="fullarmor" namespace="FullArmor.Policies.0A6601A3_1B62_4CF3_8527_81340634D9DD" />
+    <using prefix="windows" namespace="Microsoft.Policies.Windows" />
+  </policyNamespaces>
+  <supersededAdm fileName="" />
+  <resources minRequiredRevision="1.0" />
+  <categories>
+    <category name="CAT_NotePadZeilenumbruch" displayName="$(string.CAT_NotePadZeilenumbruch)" />
+  </categories>
+  <policies>
+    <policy name="POL_NotePadZeilenumbruch" class="User" displayName="$(string.POL_NotePadZeilenumbruch)" explainText="$(string.POL_NotePadZeilenumbruch_Help)" presentation="$(presentation.POL_NotePadZeilenumbruch)" key="HKEY_CURRENT_USER\Software\Microsoft\Notepad" valueName="fWrap">
+      <parentCategory ref="CAT_NotePadZeilenumbruch" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+      <enabledList>
+        <item key="HKEY_CURRENT_USER\Software\Microsoft\Notepad" valueName="fWrap">
+          <value>
+            <decimal value="1" />
+          </value>
+        </item>
+      </enabledList>
+      <disabledList>
+        <item key="HKEY_CURRENT_USER\Software\Microsoft\Notepad" valueName="fWrap">
+          <value>
+            <decimal value="0" />
+          </value>
+        </item>
+      </disabledList>
+      <elements>
+        <boolean id="CHK_63C21DF7_5EDF_4AFE_AA79_85E25BDF1CDF" key="HKEY_CURRENT_USER\Software\Microsoft\Notepad" valueName="fWrap">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+  </policies>
+</policyDefinitions>
